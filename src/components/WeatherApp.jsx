@@ -49,7 +49,6 @@ const latLong = [
 // A vairable work only at the first time
 let first = true;
 
-
 // - - - - - Weather App
 
 const WeatherApp = () => {
@@ -102,7 +101,7 @@ const WeatherApp = () => {
   }, [tabState, lang]);
   // - - - Functions
   // - Translation
-  const { t, i18n } = useTranslation();
+  const {t, i18n} = useTranslation();
   if (first) {
     i18n.changeLanguage("ar");
     first = false;
